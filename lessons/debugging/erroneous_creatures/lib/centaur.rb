@@ -1,40 +1,36 @@
 class Centaur
-
   attr_reader :name, :breed
   attr_accessor :crankiness, :standing, :laying, :sleeping
 
-  def initialize(name, breed, standing=true, laying=false, sleeping=false)
+  def initialize(name, breed, standing = true, laying = false, sleeping = false)
     @name = name
     @breed = breed
     @standing = standing
     @laying = laying
     @sleeping = sleeping
+    @crankiness = 0
   end
 
   def shoot
     @crankiness += 1
     if @crankiness < 3
-       "Twang!!!"
-     else
+      "Twang!!!"
+    else
       "NO!"
     end
   end
 
   def run
-   @crankiness += 1
-   if @crankiness < 3
-     "Clop clop clop clop!!!"
-   else
-     "NO!"
-   end
+    @crankiness += 1
+    if @crankiness < 3
+      "Clop clop clop clop!!!"
+    else
+      "NO!"
+    end
   end
 
   def cranky?
-    if @crankiness < 3
-      "false"
-    else
-      "true"
-    end
+    !(@crankiness < 3)
   end
 
   def standing?
@@ -47,6 +43,7 @@ class Centaur
     else
       @sleeping = true
       @crankiness = 0
+      "Sleepy time!"
     end
   end
 
@@ -63,5 +60,4 @@ class Centaur
   def stand_up
     @standing = true
   end
-
 end
