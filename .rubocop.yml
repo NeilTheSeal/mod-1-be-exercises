@@ -1,7 +1,7 @@
 Style/FrozenStringLiteralComment:
   Enabled: false
 Layout/LineLength:
-  Max: 500
+  Max: 80
 AllCops:
   Exclude:
     - '**/sorbet'
@@ -9,3 +9,5 @@ StringLiterals:
   Enabled: false
 Style/StringLiterals:
   Enabled: false
+Metrics/MethodLength:
+  Max: 7
