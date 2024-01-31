@@ -5,3 +5,5 @@ Layout/LineLength:
 AllCops:
   Exclude:
     - '**/sorbet'
+StringLiterals:
+  Enabled: false

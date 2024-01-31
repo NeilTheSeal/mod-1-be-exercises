@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 
 gem 'sorbet', group: :development
 gem 'sorbet-runtime'
-gem 'tapioca', require: false, group: %i[development test]
 gem 'standard'
+gem 'tapioca', require: false, group: %i[development test]
 group :development do
   gem 'rubocop'
   gem 'rubocop-discourse'
