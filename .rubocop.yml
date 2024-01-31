@@ -1,0 +1,7 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/LineLength:
+  Max: 500
+AllCops:
+  Exclude:
+    - '**/sorbet'
