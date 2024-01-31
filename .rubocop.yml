@@ -7,3 +7,5 @@ AllCops:
     - '**/sorbet'
 StringLiterals:
   Enabled: false
+Style/StringLiterals:
+  Enabled: false
