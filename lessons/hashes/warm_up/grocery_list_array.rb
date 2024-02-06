@@ -1,7 +1,7 @@
-fridge_items_1 = ["milk", "eggs", "eggs","eggs", "eggs",
-                  "eggs", "eggs", "avocado", "avocado", "tortilla",
-                  "tortilla", "tortilla", "tortilla", "tortilla",
-                  "tortilla", "tortilla", "tortilla", "tortilla"]
+# fridge_items_1 = %w[milk eggs eggs eggs eggs
+#                    eggs eggs avocado avocado tortilla
+#                    tortilla tortilla tortilla tortilla
+#                    tortilla tortilla tortilla tortilla]
 
 # Looking at the collection above:
 

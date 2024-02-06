@@ -1,8 +1,12 @@
+# rubocop:disable Lint/MissingCopEnableDirective
+# rubocop:disable Style/HashSyntax
 new_tv = {
   "screen size" => 50,
   "price" => 300,
   "brand" => "Samsung"
 }
+
+p new_tv
 
 # Remember in Ruby, symbols are basically Strings that can’t change.
 # You can recognize a symbol because it starts with a colon :.
@@ -15,6 +19,20 @@ new_tv = {
 # Syntax symbol with hash rocket:
 # create hash here
 
+new_tv2 = {
+  :"screen size" => 50,
+  :price => 300,
+  :brand => "Samsung"
+}
 
+p new_tv2
 # Syntax symbol without hash rocket:
 # create hash here
+#
+new_tv3 = {
+  "screen size": 50,
+  price: 300,
+  brand: "Samsung"
+}
+
+p new_tv3
