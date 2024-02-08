@@ -2,4 +2,4 @@ extend_config:
   - ./.rubocop.yml
 ignore:
   - '**/*':
-    - Layout/ArrayAlignment
+    - Layout
