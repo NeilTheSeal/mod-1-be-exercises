@@ -13,3 +13,25 @@
 # 8. Get all the values in your Hash. What kind of object does it return?
 # 9. Assign a new value to the :vocalist key of your hash.
 # 10. How has keys changed after the last step? How has values changed?
+
+new_band = {}
+
+new_band[:bassist] = "Neil"
+
+p new_band[:bassist]
+
+p new_band[:vocalist] # => nil
+
+new_band[:vocalist] = "Sean"
+
+new_band[:drummer] = "Jordan"
+
+p new_band.keys # => array
+
+p new_band.values # => array
+
+new_band[:vocalist] = "Neil"
+
+p new_band.keys # => has not changed
+
+p new_band.values # => has "Neil" instead of "Sean"

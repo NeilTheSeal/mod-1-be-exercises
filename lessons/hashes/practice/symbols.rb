@@ -1,5 +1,4 @@
 # rubocop:disable Lint/MissingCopEnableDirective
-# rubocop:disable Style/HashSyntax
 new_tv = {
   "screen size" => 50,
   "price" => 300,
@@ -20,9 +19,9 @@ p new_tv
 # create hash here
 
 new_tv2 = {
-  :"screen size" => 50,
-  :price => 300,
-  :brand => "Samsung"
+  "screen size": 50,
+  price: 300,
+  brand: "Samsung"
 }
 
 p new_tv2
@@ -36,3 +35,10 @@ new_tv3 = {
 }
 
 p new_tv3
+
+this = {
+  test: "20",
+  "test 2": 20
+}
+
+p this
