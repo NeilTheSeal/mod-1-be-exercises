@@ -1,85 +1,85 @@
-def stores 
+def stores # rubocop:disable Metrics/MethodLength
   {
     olive_garden: {
-      employees: [
-        'Jeff',
-        'Zach',
-        'Samantha'
+      employees: %w[
+        Jeff
+        Zach
+        Samantha
       ],
       dishes: [
         {
-          name: 'Risotto',
-          ingredients: [
-            'Rice',
-            'Cheese',
-            'Butter'
+          name: "Risotto",
+          ingredients: %w[
+            Rice
+            Cheese
+            Butter
           ],
           price: 12
         },
         {
-          name: 'Steak',
-          ingredients: [
-            'Beef',
-            'Garlic'
+          name: "Steak",
+          ingredients: %w[
+            Beef
+            Garlic
           ],
           price: 15
         }
       ]
     },
     dennys: {
-      employees: [
-        'Bob',
-        'Sue',
-        'James'
+      employees: %w[
+        Bob
+        Sue
+        James
       ],
       dishes: [
         {
-          name: 'Pancakes',
-          ingredients: [
-            'Flour',
-            'Eggs',
-            'Milk',
-            'Syrup'
+          name: "Pancakes",
+          ingredients: %w[
+            Flour
+            Eggs
+            Milk
+            Syrup
           ],
           price: 10
         },
         {
-          name: 'Waffles',
-          ingredients: [
-            'Flour',
-            'Eggs',
-            'Syrup'
+          name: "Waffles",
+          ingredients: %w[
+            Flour
+            Eggs
+            Syrup
           ],
           price: 7
         }
       ]
     },
     macdonalds: {
-      employees: [
-        'Alvin',
-        'Simon',
-        'Theodore'
+      employees: %w[
+        Alvin
+        Simon
+        Theodore
       ],
       dishes: [
         {
-          name: 'Big Mac',
-          ingredients: [
-            'Bun',
-            'Hamburger',
-            'Ketchup',
-            'pickles'
+          name: "Big Mac",
+          ingredients: %w[
+            Bun
+            Hamburger
+            Ketchup
+            pickles
           ],
           price: 5
         },
         {
-          name: 'Fries',
-          ingredients: [
-            'Potatoes',
-            'Salt'
+          name: "Fries",
+          ingredients: %w[
+            Potatoes
+            Salt
           ],
           price: 2
         }
       ]
     }
-  } 
+  }
 end
