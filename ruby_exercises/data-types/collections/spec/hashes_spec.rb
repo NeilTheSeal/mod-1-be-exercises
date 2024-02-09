@@ -1,3 +1,4 @@
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "Hashes" do # rubocop:disable Metrics/BlockLength
   it "test 1" do
     # In the line below, create a new empty hash called empty
@@ -270,3 +271,4 @@ RSpec.describe "Hashes" do # rubocop:disable Metrics/BlockLength
     expect(opposite).to eq(expected)
   end
 end
+# rubocop:enable Lint/UselessAssignment
