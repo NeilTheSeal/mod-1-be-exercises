@@ -1,3 +1,6 @@
+# typed: false
+
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "select" do # rubocop:disable Metrics/BlockLength
   xit "even numbers" do
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -72,3 +75,4 @@ RSpec.describe "select" do # rubocop:disable Metrics/BlockLength
     expect(hashes).to eq([{ dog: "fido" }, { stuff: "things" }])
   end
 end
+# rubocop:enable Lint/UselessAssignment

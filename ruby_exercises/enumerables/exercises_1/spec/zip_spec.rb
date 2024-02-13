@@ -1,3 +1,6 @@
+# typed: false
+
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "zip" do # rubocop:disable Metrics/BlockLength
   xit "speed interview pairs" do
     list1 = %w[Alice Bob Charlie]
@@ -46,3 +49,4 @@ RSpec.describe "zip" do # rubocop:disable Metrics/BlockLength
                            %w[umbrella black]])
   end
 end
+# rubocop:enable Lint/UselessAssignment

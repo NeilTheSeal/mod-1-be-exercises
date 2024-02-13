@@ -1,3 +1,6 @@
+# typed: false
+
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "map" do # rubocop:disable Metrics/BlockLength
   it "capitalizes" do
     names = %w[alice bob charlie]
@@ -51,3 +54,4 @@ RSpec.describe "map" do # rubocop:disable Metrics/BlockLength
     expect(trimmed).to eq(%w[do ca mous fro platypu])
   end
 end
+# rubocop:enable Lint/UselessAssignment

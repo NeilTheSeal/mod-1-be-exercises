@@ -1,3 +1,6 @@
+# typed: false
+
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "reject" do # rubocop:disable Metrics/BlockLength
   it "removes zeroes" do
     numbers = [2, 93, 7, 0, 0, 1, 0, 31, 0, 368]
@@ -91,3 +94,4 @@ RSpec.describe "reject" do # rubocop:disable Metrics/BlockLength
     expect(remaining).to eq(["cat", 23, "aimless", 43])
   end
 end
+# rubocop:enable Lint/UselessAssignment

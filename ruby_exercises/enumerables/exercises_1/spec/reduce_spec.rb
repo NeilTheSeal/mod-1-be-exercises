@@ -1,3 +1,6 @@
+# typed: false
+
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "reduce" do # rubocop:disable Metrics/BlockLength
   it "sums a list of numbers" do
     numbers = [32, 1, 21, 5, 81, 333]
@@ -50,3 +53,4 @@ RSpec.describe "reduce" do # rubocop:disable Metrics/BlockLength
     expect(result).to eq(31)
   end
 end
+# rubocop:enable Lint/UselessAssignment
