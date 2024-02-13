@@ -1,3 +1,6 @@
+# typed: false
+
+# rubocop:disable Lint/UselessAssignment
 RSpec.describe "find test" do # rubocop:disable Metrics/BlockLength
   it "first seven letter word" do
     words = %w[capricious berry unicorn bag apple festering
@@ -66,3 +69,4 @@ RSpec.describe "find test" do # rubocop:disable Metrics/BlockLength
     expect(found).to eq(21)
   end
 end
+# rubocop:enable Lint/UselessAssignment
