@@ -1,3 +1,5 @@
 # ./lib/event_manager.rb
 require "csv"
-puts "EventManager initialized."
+class EventManager
+  def initialize; end
+end

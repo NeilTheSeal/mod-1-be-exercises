@@ -13,3 +13,7 @@ Layout/FirstHashElementIndentation:
   EnforcedStyle: 'consistent'
 Style/Documentation:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
