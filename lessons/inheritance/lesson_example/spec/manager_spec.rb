@@ -1,30 +1,31 @@
+require "./lib/employee"
 require "./lib/manager"
 
 RSpec.describe Manager do
   describe "setup" do
     it "exists" do
-      manager = Manager.new(12)
+      manager = Manager.new("Jimmy", 2, 150_000, 1_000_000)
       expect(manager).to be_a Manager
     end
 
     it "has base_salary, per_team_rate, and departments attributes" do
-      manager = Manager.new(12)
-      expect(manager.base_salary).to eq(12)
+      manager = Manager.new("Jimmy", 2, 150_000, 1_000_000)
+      expect(manager.base_salary).to eq(150_000)
       expect(manager.per_team_rate).to eq 5
       expect(manager.departments).to be_instance_of Array
-      expect(manager.departments.length).to eq (0)
+      expect(manager.departments.length).to eq(0)
     end
 
     it "can add_department" do
-      manager = Manager.new(12)
+      manager = Manager.new("Jimmy", 2, 150_000, 1_000_000)
       manager.add_department("Sales")
       expect(manager.departments).to eq(["Sales"])
       expect(manager.departments.length).to eq(1)
     end
 
     it "has benefits to start with" do
-      manager = Manager.new(12)
-      expect(manager.benefits).to eq([:sick_leave, :health_insurance])
+      manager = Manager.new("Jimmy", 2, 150_000, 1_000_000)
+      expect(manager.benefits).to eq(%i[sick_leave health_insurance])
     end
   end
 
