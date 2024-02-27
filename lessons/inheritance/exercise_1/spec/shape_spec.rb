@@ -3,6 +3,7 @@ require "./lib/shape"
 RSpec.describe Shape do
   it "exists" do
     s = Shape.new("red", 2, 4)
+    expect(s).to be_an_instance_of(Shape)
   end
 
   it "has color, length, and width attributes" do

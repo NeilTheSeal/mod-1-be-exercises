@@ -4,6 +4,8 @@ require "./lib/rectangle"
 RSpec.describe Rectangle do
   it "exists" do
     r = Rectangle.new("blue", 5, 10)
+    expect(r).to be_an_instance_of(Rectangle)
+    expect(r).to be_an_instance_of(Shape)
   end
 
   it "has color, length, and width attributes" do
