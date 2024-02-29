@@ -10,11 +10,8 @@ class Bob
   end
 
   def paint_colors
-    @paints.map do |paint|
-      paint.color
-    end
+    @paints.map(&:color)
   end
-
 
   def total_paint_amount
     total = 0
