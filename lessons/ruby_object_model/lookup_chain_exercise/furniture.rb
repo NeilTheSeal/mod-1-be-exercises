@@ -1,5 +1,5 @@
 require "./wood_things"
-require './furniture_module'
+require "./furniture_module"
 
 class Furniture < WoodThings
   include FurnitureModule
@@ -7,5 +7,4 @@ class Furniture < WoodThings
   def soft
     "superclass"
   end
-
 end

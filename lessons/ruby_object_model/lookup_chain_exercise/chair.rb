@@ -2,10 +2,11 @@ require "./chair_module"
 require "./furniture"
 
 class Chair < Furniture
-include FurnitureModule
+  include FurnitureModule
   include ChairModule
 
   def initialize
+    super
     @motto = "I'm a chair!"
   end
 
@@ -22,8 +23,8 @@ include FurnitureModule
   # def soft
   #   "class"
   # end
-
 end
 
 Chair.new.chair_type
-require 'pry'; binding.pry
+require "pry"
+binding.pry
